@@ -58,22 +58,26 @@ body {
     pointer-events: none;
     user-select: none;
   }
+
+  .content {
+    overflow-y: hidden;
+  }
 }
 
 
 #fullscreen-blocker {
     position: fixed;
-    inset: 0;                 /* top:0; right:0; bottom:0; left:0; */
-    background: #14141e96; /* <-- Adicione esta linha */
+    inset: 0;                 
+    background: #14141e96; 
     backdrop-filter: blur(40px);
-    display: none;            /* escondido por padrão */
+    display: none;            
     align-items: center;
     justify-content: center;
     color: #fff;
     font-size: 1.2rem;
     text-align: center;
     z-index: 9999;
-    pointer-events: all;      /* bloqueia clique no conteúdo atrás */
+    pointer-events: all;   
     padding: 1rem;
 }
 
@@ -112,7 +116,7 @@ section.hidden {
     background:var(--midnight-green);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    padding: 2.2%; 
+    padding: 2.4%; 
 }
 
 #card .card-side .top {
@@ -139,7 +143,7 @@ section.hidden {
     padding: 1.4rem 0;
     position: relative;
     color: #ffffff86;
-    font-size: 13pt;
+    font-size: 15pt;
     font-weight: 700;
     text-decoration: none;
     transition: color 0.3s ease;
