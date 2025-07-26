@@ -75,3 +75,42 @@ a.clickable{
     content: url("../images/icons/github-white-icon.png");
 }
 
+@media (max-width: 650px){
+    .about-me-section {
+        display: block;
+        width: 100%;
+    }
+
+    .about-me-section .section-side {
+        display: block;
+        width: 100%;
+    }
+
+    .about-me-section .section-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-me-section .section-side {
+        text-wrap: wrap;
+        display: block;
+        width: 100%;
+    }
+
+    .about-me-section .about-me-image {
+        margin: 2.2rem auto;
+        border-radius: 30px;
+    }
+
+    .about-me-section .icons-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 0;
+    }
+
+    .about-me-section .icons-container .icon {
+        font-size: 10pt;
+        padding: 1rem;
+    }
+}
+

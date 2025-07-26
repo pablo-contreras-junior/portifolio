@@ -2,6 +2,10 @@
     width: 100%;
 }
 
+.training-section hr {
+    display: none;
+}
+
 .training-section .school-card {
     display: flex;
     align-items: center;
@@ -67,4 +71,64 @@
     font-size: 38pt;
     color: var(--section-text);
 
+}
+
+@media(max-width: 650px){
+    .training-section .section-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .training-section .section-title::before {
+        content: "Minha ";
+    }
+
+    .training-section .school-card {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+
+    .training-section .etec-label {
+        flex-direction: row;
+        justify-content: space-evenly;
+        background: var(--links);
+        width: 100%;
+        padding: 1rem;
+        border-radius: 20px;
+    }
+
+    .training-section .etec-label h1 {
+        font-size: 26pt;
+    }
+
+    .training-section .etec-label h3 {
+        font-size: 17pt;
+    }
+
+
+    .training-section .school-card .etec-image {
+        width: 100%;
+        margin: 0 auto 1.2rem;
+        border-radius: 30px;
+    }
+
+    .training-section .self-teaching-card {
+        display: block;
+    }
+
+    .training-section .self-teaching-card .text {
+        display: block;
+    }
+
+    .training-section .self-teaching-card .text h3 {
+        width: 100%;
+        font-size: 30pt;
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+
+    .training-section hr {
+        display: block;
+    }
 }

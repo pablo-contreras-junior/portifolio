@@ -85,3 +85,27 @@
     border-radius: 10px;
     background: var(--dark-red);
 }
+
+@media (max-width: 650px){
+    .skills-section {
+        display: block;
+    }
+
+    .skills-section .section-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .skills-section .excel-image {
+        display: none;
+    }
+
+    .skills-section .bottom {
+        margin-top: 2.8rem;
+    }
+
+    .skills-section .bottom .chart-container {
+        flex-direction: column;
+        gap: 2.8rem;
+    }
+}
