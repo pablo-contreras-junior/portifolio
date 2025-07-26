@@ -176,7 +176,10 @@
     border: 1px solid var(--dark-red);
 }
 
-@media (max-width: 450px){
+@media (max-width: 650px){
+    #popup {
+        display: none !important;
+    }
     .projects-section .top-title h1 {
         width: 100%;
         text-align: center;
@@ -189,5 +192,34 @@
     .projects-section .adnomos-desc .image {
         width: 120px; height: 120px;
         margin: 0 auto 2.2rem;
+    }
+
+    .projects-section .adnomos-photos {
+        margin: 2.2rem auto;
+    }
+
+    .projects-section .adnomos-photos .photos {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-section .personal-systems-desc {
+        display: block;
+    }
+
+    .projects-section .personal-systems-desc h4 {
+        width: 100%;
+        text-align: center;
+        margin: 2.2rem auto;
+        font-size: 40pt;
+    }
+
+    .projects-section .personal-systems-desc .right p{
+        display: block;
+        width: 100%;
+    }
+
+    .projects-section .personal-systems-photos {
+        margin: 2.2rem auto;
+        grid-template-columns: 1fr;
     }
 }

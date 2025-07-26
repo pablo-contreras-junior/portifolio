@@ -96,6 +96,10 @@
         text-align: center;
     }
 
+    .skills-section .intro {
+        width: 100%;
+    }
+
     .skills-section .excel-image {
         display: none;
     }

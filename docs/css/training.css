@@ -74,13 +74,12 @@
 }
 
 @media(max-width: 650px){
+    .training-section {
+        display: block;
+    }
     .training-section .section-title {
         width: 100%;
         text-align: center;
-    }
-
-    .training-section .section-title::before {
-        content: "Minha ";
     }
 
     .training-section .school-card {
@@ -91,19 +90,19 @@
 
     .training-section .etec-label {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         background: var(--links);
-        width: 100%;
+        width: 92%;
         padding: 1rem;
         border-radius: 20px;
     }
 
     .training-section .etec-label h1 {
-        font-size: 26pt;
+        font-size: 23pt;
     }
 
     .training-section .etec-label h3 {
-        font-size: 17pt;
+        font-size: 16pt;
     }
 
 
