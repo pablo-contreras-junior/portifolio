@@ -57,10 +57,12 @@ body {
     filter: blur(8px) brightness(0.5);
     pointer-events: none;
     user-select: none;
+    height:auto;
   }
 
   .content {
     overflow-y: hidden;
+
   }
 }
 
