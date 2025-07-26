@@ -1,4 +1,3 @@
-
 .projects-section .adnomos-desc {
     display: flex;
     align-items: center;
@@ -175,4 +174,20 @@
     opacity: 1;
     transform: translateX(-50%);
     border: 1px solid var(--dark-red);
+}
+
+@media (max-width: 450px){
+    .projects-section .top-title h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .projects-section .adnomos-desc {
+        display: block;
+    }
+
+    .projects-section .adnomos-desc .image {
+        width: 120px; height: 120px;
+        margin: 0 auto 2.2rem;
+    }
 }
