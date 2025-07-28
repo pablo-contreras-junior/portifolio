@@ -1,0 +1,112 @@
+.training-section {
+    width: 100%;
+}
+
+.training-section .school-card {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.training-section .school-card .etec-image {
+    background: url("../images/etec-image.png");
+    background-position: bottom;
+    background-size: cover;
+    width: 500px; height: 260px;
+    border-radius: 10px;
+    margin-right: 3%;
+}
+
+
+.training-section .etec-label {
+    min-width: 245px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.training-section .school-card h1 {
+    font-size: 36pt;
+    width: 180px;
+    color: var(--section-text);
+}
+
+.training-section .school-card h3 {
+    font-size: 20pt;
+    font-weight: bold;
+    width: 250px; 
+    color:var(--dark-red);
+}
+
+.training-section .self-teaching-card {
+    margin-top: var(--section-division);
+    display: flex;
+    gap: 35px;
+    width: 100%;  
+}
+
+.training-section .self-teaching-card .text {
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.training-section .self-teaching-card .text h3{
+    text-align: justify;
+    font-size: 38pt;
+    color: var(--section-text);
+}
+
+@media (max-width: 700px) {
+.training-section .section-title {
+    margin: 2rem auto;
+}
+
+    .training-section .school-card{
+        flex-direction: column;
+        background: var(--links);
+        padding: 1rem;
+        border-radius: 20px;
+    }
+    .training-section .school-card .etec-image {
+        width: 100%;
+        margin: 0 auto 1rem;
+    }
+    .training-section .school-card .etec-label {
+        width: 100%;
+        flex-direction: row;
+        min-width: none;
+        gap: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .training-section .school-card .etec-label h1{
+        font-size: 20pt;
+        color: var(--midnight-green);
+    }
+
+    .training-section .school-card .etec-label h3{
+        font-size: 14pt;
+        color: var(--midnight-green);
+    }
+
+    .training-section .self-teaching-card {
+        margin: 0 auto;
+        gap: 0;
+    }
+
+    .training-section .self-teaching-card .text{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .training-section .self-teaching-card .text h3 {
+        font-size: 28pt;
+        text-align: center;
+        margin: 2.5rem auto 0;
+    }
+    
+}

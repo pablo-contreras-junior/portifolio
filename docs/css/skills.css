@@ -1,0 +1,109 @@
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-section .section-title {
+    margin-bottom: var(--title-margin-bottom);
+}
+
+.skills-section .intro {
+    width: 400px; height: 334px;
+}
+
+.skills-section .top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills-section .excel-image{
+    width: 350px; height: 400px;
+    border-radius: 20px;
+    background: url("../images/excel-charts.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -200px 0px;
+}
+
+.skills-section .bottom {
+    margin-top: var(--section-division);
+    width: 100%;
+}
+
+.skills-section .bottom .chart-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills-section .bottom .chart-container .pizza-chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    rotate: 10deg;
+    background: conic-gradient(
+        #4CAF50 0% 27%, /* Excel */
+        #E53935 27.2% 38%, /* Powerpoint */
+        #1E88E5  38.2% 50%, /* Word */
+        #00ACC1   50.2% 65%, /* HTML e CSS */
+        #FFB300  65.2% 77%, /* Javascript */
+        #9C27B0  77.2% 100% /* PHP */
+        
+    );
+}
+
+.skills-section .bottom .chart-container .inner-circle {
+    width: 150px; height:150px;
+    border-radius: 50%;
+    background-color: var(--main-content);
+}
+
+.skills-section .bottom .label-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 340px;
+    max-height: 240px;
+    gap: 55px;
+}
+
+.skills-section .bottom .label-container .label {
+    display: flex;
+    font-size: 13pt;
+    align-items: center;
+    color: var(--dark-red);
+    font-weight: 300;
+    gap: 5px;
+}
+
+.skills-section .bottom .label-container .label .color {
+    width: 32px; height: 32px;
+    border-radius: 10px;
+    background: var(--dark-red);
+}
+
+@media (max-width: 700px) {
+    .skills-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-section .intro {
+        width: 100%;
+    }
+
+    .skills-section .excel-image {
+        display: none;
+    }
+
+    .skills-section .bottom .chart-container{
+        margin: 2rem auto 0;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+}

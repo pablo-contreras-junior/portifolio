@@ -1,0 +1,228 @@
+
+.projects-section .adnomos-desc {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+.projects-section .adnomos-desc .image {
+    min-width: 300px; min-height: 300px;
+    background: url("../images/adnomos-logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.projects-section .adnomos-desc .image-side .section-description{
+    margin-bottom: 25px;
+}
+
+.projects-section .adnomos-desc .image-side .github-button {
+    text-decoration: none;
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark-red);
+    color: var(--main-content);
+    border-radius: 10px;
+}
+
+.projects-section .adnomos-desc .image-side .github-button:hover {
+    cursor: pointer;
+    background: #5c2121;
+} 
+
+
+.projects-section .adnomos-desc .image-side .github-button img{
+    width: 38px; height: 38px;
+}
+
+.projects-section .adnomos-photos{
+    margin-top: var(--section-division);
+    background: var(--links);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.projects-section .adnomos-photos .photos {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.projects-section .adnomos-photos .photos .card img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+
+.projects-section .adnomos-photos .photos .card p {
+    font-size: 15pt;
+    font-weight: 300;
+    color: var(--midnight-green);
+    padding-left: 5px;
+}
+
+.projects-section .personal-systems-desc {
+    margin-top: var(--section-division);
+    display: flex;
+    align-items: center;
+}
+
+.projects-section .personal-systems-desc h4 {
+    font-size: 46pt;
+    margin-left: 3%;
+    color: var(--section-text);
+}
+
+.projects-section .personal-systems-desc p {
+    width: 426px;
+}
+
+.projects-section .personal-systems-photos {
+    margin-top: var(--section-division);
+    background: var(--links);
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.projects-section .personal-systems-photos img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.projects-section .personal-systems-photos img:hover,
+.projects-section .adnomos-photos .photos .card img:hover{
+    cursor: pointer;
+}
+
+.projects-section .source-code-button img {
+    width: 25px; height: 25px;
+}
+
+.projects-section .source-code-button {
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background: #012456;
+    color: var(--main-content);
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-section .source-code-button:hover {
+    background: #00193b;
+    cursor: pointer;
+}
+
+#popup {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: #000000a8;
+    z-index: 1000;
+}
+
+#popup-image {
+    width: 850px; height: 478px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.719);
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tooltip-container .tooltip{
+    position: absolute;
+    left:50%;
+    bottom: 100%;
+    transform: translateX(-50%) translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    background: var(--main-content);   
+    opacity: 0;
+    color: var(--dark-red);
+    font-size: 12pt;
+    padding: 3%;
+    border-radius: 10px;
+    gap: 5px;
+    z-index: 10;
+}
+
+.tooltip-container .tooltip img {
+    width: 36px;
+    height: 36px;
+}
+
+.tooltip-container:hover .tooltip {
+    opacity: 1;
+    transform: translateX(-50%);
+    border: 1px solid var(--dark-red);
+}
+
+@media (max-width: 700px){
+    .projects-section #popup {
+        display: none !important;
+    }
+
+    .projects-section .top-title .section-title {
+        margin: 0 auto 2rem;
+    }
+
+
+
+    .projects-section .adnomos-desc {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .projects-section .adnomos-photos {
+        margin-top: 2.8rem;
+    }
+
+    .projects-section .adnomos-photos .photos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .projects-section .personal-systems-desc {
+        flex-direction: column;
+    }
+
+    .projects-section .personal-systems-desc .right {
+        width: 100%;
+    }
+
+    .projects-section .personal-systems-desc h4{
+        margin: 0 auto ;
+        font-size: 35pt;
+        text-align: center;
+    }
+
+    .projects-section .personal-systems-desc p {
+        width: 100%;
+    }
+
+    .projects-section .personal-systems-photos {
+        display: grid;
+        margin-top: 2rem;
+        grid-template-columns: 1fr;
+    }
+}

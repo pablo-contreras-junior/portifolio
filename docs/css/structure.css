@@ -1,0 +1,215 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-VariableFont_opsz\,wght.ttf");
+}
+
+:root{
+--main-content: #f0e5e4;
+--raisin-black: #1f1a26;
+--midnight-green: #005661;
+--french-rose: #e84a72;
+--section-title: #7c5e45;
+--section-text: #3f3f3f;
+--dark-red: #8f3535;
+--beatriz: #eccfcd;
+--links: #89bff4;
+
+--title-margin-bottom: 5%;
+--section-division: 5%;
+--side-gaps: 45px;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to left top,var(--raisin-black) 50% ,#0a0913);
+}
+
+section {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    margin-bottom: 5%;
+}
+
+section.hidden {
+    opacity: 0.06;
+    pointer-events: none;
+}
+
+#card {
+    display: flex;
+    background: var(--main-content);
+    /* horizontal offset | vertical offset */
+    box-shadow: 10px 8px 10px rgb(0, 0, 0, 0.3);
+    height: 130vh;
+    width: 78vw;
+    margin: 2vh auto 5vh;
+    border-radius: 20px;
+}
+
+#card .card-side {
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    background:var(--midnight-green);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 2.3%; 
+}
+
+#card .card-side .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#card .card-side .top .square-photo{
+    width: 150px; height: 180px;
+    border-radius: 30px;
+    background: url("../images/eu-sorriso.jpg");
+    background-size: cover;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: fit-content;
+    margin: 1.8rem auto 2rem ;
+    font-size: 15pt;
+    font-weight: bold;
+    color: var(--main-content);
+    text-transform: capitalize;
+}
+
+.nav-bar{
+    margin: 0 0 0 0.4rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nav-bar a{
+    padding-bottom: 1.2rem;
+    position: relative;
+    color: #ffffff86;
+    font-size: 13pt;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-bar a:not(:first-child){
+    padding-top: 1.2rem;
+}
+
+
+
+.nav-bar a:hover{
+    color: #ffffffd2;
+}
+
+.nav-bar a.selected {
+    color: #ffffffd2;
+    transform: translateX(4px);
+}
+
+.content {
+    padding: 3.8%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;   /* Edge */
+}
+
+.content::-webkit-scrollbar {
+    display: none;              /* Chrome, Safari e Opera */
+}
+
+.section-title {
+    color: var(--section-title);
+    font-size: 45pt;
+    font-weight: bold;
+}
+
+.section-description {
+    text-align: justify;
+    font-size: 14pt;
+    color: var(--section-text);
+}
+
+.top-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--title-margin-bottom);
+}
+
+.top-title img {
+    width: 60px; height: 60px;
+}
+
+.bottom-space {
+    min-height: 30vh;
+}
+
+@media (max-width: 700px) {
+    #card .card-side {
+        display: none;
+    }
+
+    #card {
+        padding: 0.5rem;
+        overflow-x: hidden;
+        width: 100vw;
+        min-width: 0;
+        height: auto;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .content {
+        padding: 1rem 0.5rem;
+        width: 100vw;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .top-title {
+        margin-bottom: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .top-title img {
+        display: none;
+    }
+
+    #card .content .section-title,
+    .section-title {
+        font-size: 3.4rem;
+        margin: 1.2rem auto 1.2rem auto;
+        text-align: center;
+        word-break: break-word;
+    }
+
+    .section-description {
+        margin: 1.2rem auto !important;
+        width: 100%;
+        text-align: justify;
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    .bottom-space {
+        display: none;
+    }
+}
