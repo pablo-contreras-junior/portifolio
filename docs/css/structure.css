@@ -174,7 +174,7 @@ section.hidden {
     }
 
     .content {
-        padding: 1rem 1.5rem;
+        padding: 1rem 1.8rem;
         width: 100vw;
         min-width: 0;
         box-sizing: border-box;
@@ -192,7 +192,7 @@ section.hidden {
     }
 
     #card .content .section-title{
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         margin: 1.2rem auto 1.2rem auto;
         text-align: center;
         word-break: break-word;

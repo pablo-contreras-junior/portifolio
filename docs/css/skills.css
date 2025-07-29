@@ -42,7 +42,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px; height: 300px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    max-width: 300px;
     border-radius: 50%;
     rotate: 10deg;
     background: conic-gradient(
@@ -57,7 +59,8 @@
 }
 
 .skills-section .bottom .chart-container .inner-circle {
-    width: 150px; height:150px;
+    width: 50%;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     background-color: var(--main-content);
 }
@@ -92,26 +95,28 @@
         align-items: center;
     }
 
+    .skills-section .section-title {
+        width: 80%;
+        margin: 0 auto;
+    }
+
     .skills-section .intro {
         width: 100%;
+        height: auto;
     }
 
     .skills-section .excel-image {
         display: none;
     }
 
+    .skills-section .bottom {
+        margin-top: 0;
+    }
+
     .skills-section .bottom .chart-container{
-        margin: 0 auto;
+        margin: 1rem auto 0;
         flex-direction: column;
-        gap: 5rem;
-    }
-
-    .skills-section .bottom .chart-container .pizza-chart {
-        width: 280px; height: 280px;
-    }
-
-    .skills-section .bottom .chart-container .pizza-chart .inner-circle {
-        width: 140px; height: 140px; 
+        gap: 3rem;
     }
 
 }

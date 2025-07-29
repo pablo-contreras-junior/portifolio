@@ -183,7 +183,12 @@
     }
 
     .projects-section .top-title .section-title {
+        width: 80%;
         margin: 0 auto 2rem;
+    }
+
+    .projects-section .top-title .section-title::before {
+        content: "Meus ";
     }
 
 

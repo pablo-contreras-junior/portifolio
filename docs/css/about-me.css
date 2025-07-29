@@ -80,6 +80,11 @@ a.clickable{
         flex-direction: column;
     }
 
+    .about-me-section .section-title {
+        width: 80%;
+        margin: 0 auto;
+    }
+
     .about-me-section .section-side {
         width: 100%;
     }
