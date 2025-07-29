@@ -72,13 +72,13 @@
 }
 
 .projects-section .personal-systems-desc h4 {
-    font-size: 46pt;
-    margin-left: 3%;
+    font-size: 40pt;
+    margin: 2.5rem;
     color: var(--section-text);
 }
 
 .projects-section .personal-systems-desc p {
-    width: 426px;
+    width: 100%;
 }
 
 .projects-section .personal-systems-photos {
