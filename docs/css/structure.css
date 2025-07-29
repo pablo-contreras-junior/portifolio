@@ -164,7 +164,6 @@ section.hidden {
     }
 
     #card {
-        padding: 0.5rem;
         overflow-x: hidden;
         width: 100vw;
         min-width: 0;
@@ -175,7 +174,7 @@ section.hidden {
     }
 
     .content {
-        padding: 1rem 0.5rem;
+        padding: 1rem 1.2rem;
         width: 100vw;
         min-width: 0;
         box-sizing: border-box;
