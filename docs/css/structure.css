@@ -191,9 +191,8 @@ section.hidden {
         display: none;
     }
 
-    #card .content .section-title,
-    .section-title {
-        font-size: 3.4rem;
+    #card .content .section-title{
+        font-size: 2.2rem;
         margin: 1.2rem auto 1.2rem auto;
         text-align: center;
         word-break: break-word;
