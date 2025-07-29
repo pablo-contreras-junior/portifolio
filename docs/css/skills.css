@@ -101,9 +101,17 @@
     }
 
     .skills-section .bottom .chart-container{
-        margin: 2rem auto 0;
+        margin: 0 auto;
         flex-direction: column;
         gap: 5rem;
+    }
+
+    .skills-section .bottom .chart-container .pizza-chart {
+        width: 280px; height: 280px;
+    }
+
+    .skills-section .bottom .chart-container .pizza-chart .inner-circle {
+        width: 140px; height: 140px; 
     }
 
 }
