@@ -102,6 +102,10 @@
         color: var(--midnight-green);
     }
 
+    .training-section .school-card .etec-label h3 {
+        display: none;
+    }
+
     .training-section .self-teaching-card {
         margin: 0 auto;
         gap: 0;
