@@ -39,6 +39,10 @@
     color:var(--dark-red);
 }
 
+.training-section .school-card p {
+    color: var(--section-text);
+}
+
 .training-section .self-teaching-card {
     margin-top: var(--section-division);
     display: flex;
