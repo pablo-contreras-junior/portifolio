@@ -119,7 +119,7 @@ section.hidden {
 }
 
 .content {
-    padding: 3rem 3.7%;
+    padding: 3rem 4.2%;
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
@@ -133,7 +133,7 @@ section.hidden {
 
 .section-title {
     color: var(--section-title);
-    font-size: 45pt;
+    font-size: 48pt;
     font-weight: bold;
 }
 
@@ -155,7 +155,7 @@ section.hidden {
 }
 
 .bottom-space {
-    min-height: 28vh;
+    min-height: 25vh;
 }
 
 @media (max-width: 700px) {

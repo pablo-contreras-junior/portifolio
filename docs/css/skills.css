@@ -8,24 +8,25 @@
 }
 
 .skills-section .intro {
-    width: 400px; height: 334px;
+    width: 54%; 
 }
 
 .skills-section .top {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: space-between;
 }
 
-.skills-section .excel-image{
-    width: 350px; height: 400px;
+.skills-section .gears-image{
+    width: 330px; height: 495px;
     border-radius: 20px;
-    background: url("../images/excel-charts.jpg");
+    background: url("../images/gears.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -200px 0px;
 }
+
+
 
 .skills-section .bottom {
     margin-top: var(--section-division);
@@ -48,11 +49,11 @@
     border-radius: 50%;
     rotate: 10deg;
     background: conic-gradient(
-        #4CAF50 0% 27%, /* Excel */
-        #E53935 27.2% 38%, /* Powerpoint */
-        #1E88E5  38.2% 50%, /* Word */
-        #00ACC1   50.2% 65%, /* HTML e CSS */
-        #FFB300  65.2% 77%, /* Javascript */
+        #4CAF50 0% 15%, /* NodeJS 15%*/
+        #E53935 15.2% 35%, /* Laravel  20%*/
+        #1E88E5  35.2% 45%, /* Git e Github 10% */
+        #00ACC1   45.2% 60%, /* HTML e CSS 15%*/
+        #FFB300  60.2% 77%, /* Javascript */
         #9C27B0  77.2% 100% /* PHP */
         
     );
