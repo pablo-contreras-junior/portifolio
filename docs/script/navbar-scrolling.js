@@ -30,3 +30,5 @@ container.addEventListener('scroll', () => {
         }
     });
 });
+
+container.dispatchEvent(new Event('scroll'));
