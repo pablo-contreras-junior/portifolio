@@ -65,9 +65,9 @@
 }
 
 @media (max-width: 700px) {
+
     .training-section .section-title {
-        width: 80%;
-        margin: 2rem auto;
+        width: 100%;
     }
 
     .training-section .section-title::before {

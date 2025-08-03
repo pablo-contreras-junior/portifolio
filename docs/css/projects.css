@@ -178,12 +178,13 @@
 }
 
 @media (max-width: 700px){
+
     .projects-section #popup {
         display: none !important;
     }
 
     .projects-section .top-title .section-title {
-        width: 80%;
+        width: 90%;
         margin: 0 auto 2rem;
     }
 

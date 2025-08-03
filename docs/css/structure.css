@@ -159,6 +159,10 @@ section.hidden {
 }
 
 @media (max-width: 700px) {
+    section {
+        margin: 0 !important;
+    }
+
     section.hidden {
         opacity: 1 !important;
         pointer-events: auto !important;
@@ -186,7 +190,7 @@ section.hidden {
     }
 
     .top-title {
-        margin-bottom: 1.5rem;
+        margin: 0;
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
@@ -197,8 +201,8 @@ section.hidden {
     }
 
     #card .content .section-title{
-        font-size: 2.5rem;
-        margin: 1.2rem auto 1.2rem auto;
+        font-size: 3rem;
+        margin: 2rem auto 2rem auto !important;
         text-align: center;
         word-break: break-word;
     }
