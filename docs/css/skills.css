@@ -8,7 +8,7 @@
 }
 
 .skills-section .intro {
-    width: 54%; 
+    width: 52%; 
 }
 
 .skills-section .top {
@@ -19,10 +19,11 @@
 }
 
 .skills-section .gears-image{
-    width: 330px; height: 495px;
+    width: 330px; height: 480px;
     border-radius: 20px;
-    background: url("../images/gears.png");
+    background: url("../images/screen-code.jpg");
     background-size: cover;
+    right: 60px;
     background-repeat: no-repeat;
 }
 
