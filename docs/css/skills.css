@@ -21,11 +21,11 @@
 .skills-section .gears-image{
     width: 330px; height: 480px;
     border-radius: 20px;
-    background: url("../images/screen-code.jpg");
+    background: url("../images/coffee.jpg");
+    background-position-x: -310px;
     background-size: cover;
-    right: 60px;
     background-repeat: no-repeat;
-}
+} 
 
 
 
