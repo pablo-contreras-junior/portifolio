@@ -133,7 +133,7 @@ section.hidden {
 
 .section-title {
     color: var(--section-title);
-    font-size: 45pt;
+    font-size: 47.5pt;
     font-weight: bold;
 }
 
@@ -159,6 +159,11 @@ section.hidden {
 }
 
 @media (max-width: 700px) {
+    section.hidden {
+        opacity: 1 !important;
+        pointer-events: auto !important;
+    }
+
     #card .card-side {
         display: none;
     }

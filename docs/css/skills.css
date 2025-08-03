@@ -41,6 +41,7 @@
 }
 
 .skills-section .bottom .chart-container .pizza-chart {
+    transition: filter 1s ease;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,11 +57,31 @@
         #00ACC1   45.2% 60%, /* HTML e CSS 15%*/
         #FFB300  60.2% 77%, /* Javascript */
         #9C27B0  77.2% 100% /* PHP */
-        
     );
 }
 
+.pizza-chart {
+    position: relative;
+    overflow: hidden;
+}
+
+.pizza-chart::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: var(--highlight-gradient, none);
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.pizza-chart.active::before {
+    opacity: 1;
+}
+
+
 .skills-section .bottom .chart-container .inner-circle {
+    z-index: 5;
     width: 50%;
     aspect-ratio: 1/1;
     border-radius: 50%;
