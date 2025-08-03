@@ -8,7 +8,7 @@
 }
 
 .skills-section .intro {
-    width: 52%; 
+    width: 50%; 
 }
 
 .skills-section .top {
@@ -19,10 +19,10 @@
 }
 
 .skills-section .gears-image{
-    width: 330px; height: 480px;
+    width: 346px; height: 420px;
     border-radius: 20px;
     background: url("../images/coffee.jpg");
-    background-position-x: -310px;
+    background-position-x: -270px;
     background-size: cover;
     background-repeat: no-repeat;
 } 
@@ -72,7 +72,7 @@
     border-radius: 50%;
     background: var(--highlight-gradient, none);
     opacity: 0;
-    transition: opacity 0.8s ease;
+    transition: opacity 1s ease;
 }
 
 .pizza-chart.active::before {
@@ -104,6 +104,10 @@
     color: var(--dark-red);
     font-weight: 300;
     gap: 5px;
+}
+
+.skills-section .bottom .label-container .label:hover {
+    cursor: pointer;
 }
 
 .skills-section .bottom .label-container .label .color {
