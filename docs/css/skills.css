@@ -14,8 +14,8 @@
 .skills-section .top {
     width: 100%;
     display: flex;
-    align-items:center;
-    gap: 2.8rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .skills-section .gears-image{
