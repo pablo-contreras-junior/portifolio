@@ -15,14 +15,15 @@
     width: 100%;
     display: flex;
     align-items:center;
-    justify-content: space-between;
+    gap: 2.8rem;
 }
 
 .skills-section .gears-image{
-    width: 346px; height: 420px;
+    width: 348px;
+    height: 425px;
     border-radius: 20px;
     background: url("../images/coffee.jpg");
-    background-position-x: -270px;
+    background-position-x: -225px;
     background-size: cover;
     background-repeat: no-repeat;
 } 
@@ -55,8 +56,8 @@
         #E53935 15.2% 35%, /* Laravel  20%*/
         #1E88E5  35.2% 45%, /* Git e Github 10% */
         #00ACC1   45.2% 60%, /* HTML e CSS 15%*/
-        #FFB300  60.2% 77%, /* Javascript */
-        #9C27B0  77.2% 100% /* PHP */
+        #FFB300  60.2% 77%, /* Javascript 17%*/
+        #9C27B0  77.2% 100% /* PHP 23%*/
     );
 }
 
@@ -72,7 +73,7 @@
     border-radius: 50%;
     background: var(--highlight-gradient, none);
     opacity: 0;
-    transition: opacity 1s ease;
+    transition: opacity 0.3s ease;
 }
 
 .pizza-chart.active::before {
