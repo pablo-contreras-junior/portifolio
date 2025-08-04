@@ -20,10 +20,10 @@
 
 .skills-section .gears-image{
     width: 348px;
-    height: 425px;
+    height: 424px;
     border-radius: 20px;
     background: url("../images/coffee.jpg");
-    background-position-x: -225px;
+    background-position: -270px 0;
     background-size: cover;
     background-repeat: no-repeat;
 } 
@@ -61,11 +61,6 @@
     );
 }
 
-.pizza-chart {
-    position: relative;
-    overflow: hidden;
-}
-
 .pizza-chart::before {
     content: "";
     position: absolute;
@@ -73,13 +68,16 @@
     border-radius: 50%;
     background: var(--highlight-gradient, none);
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.5s ease;
+    -webkit-mask: radial-gradient(circle 65% at center, transparent 99%, black 100%);
+    -webkit-mask-composite: destination-out;
+    mask: radial-gradient(circle 65% at center, transparent 99%, black 100%);
+    mask-composite: exclude;
 }
 
 .pizza-chart.active::before {
     opacity: 1;
 }
-
 
 .skills-section .bottom .chart-container .inner-circle {
     z-index: 5;
