@@ -60,14 +60,14 @@
 
 .training-section .self-teaching-card .text h3{
     text-align: justify;
-    font-size: 38pt;
+    font-size: 32pt;
     color: var(--section-text);
 }
 
 @media (max-width: 700px) {
 
     .training-section .section-title {
-        width: 100%;
+        width: 80%;
     }
 
     .training-section .section-title::before {

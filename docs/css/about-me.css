@@ -8,6 +8,11 @@
     margin-bottom: var(--title-margin-bottom);
 }
 
+.about-me-section .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .about-me-section .section-side {
     width: 50%;
@@ -81,8 +86,12 @@ a.clickable{
     }
 
     .about-me-section .section-title {
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
+    }
+
+    .about-me-section .top {
+        flex-direction: column;
     }
 
     .about-me-section .section-side {
