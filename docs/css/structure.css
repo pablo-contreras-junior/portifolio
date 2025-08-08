@@ -52,7 +52,6 @@ section.hidden {
 }
 
 #card .card-side {
-    border: 1px solid var(--main-content);
     display:flex;
     flex-direction: column;
     justify-content: start;
