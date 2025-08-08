@@ -68,20 +68,12 @@ section.hidden {
     align-items: center;
 }
 
-#card .card-side .top .square-photo{
-    
-    width: 150px; height: 180px;
-    border-radius: 15px;
-    background: url("../images/eu-sorriso.jpg");
-    background-size: cover;
-}
-
 .name-container {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
     width: fit-content;
-    margin: 1.8rem auto 2rem ;
+    margin: 1rem auto 2rem ;
     font-size: 15pt;
     font-weight: bold;
     color: var(--main-content);
