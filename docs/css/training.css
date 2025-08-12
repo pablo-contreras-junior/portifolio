@@ -58,7 +58,7 @@
     align-items: center;
 }
 
-.training-section .self-teaching-card .text h3{
+.training-section .self-teaching-card .text h4{
     text-align: justify;
     font-size: 32pt;
     color: var(--section-text);
