@@ -73,14 +73,14 @@ section.hidden {
     gap: 0.4rem;
     width: fit-content;
     margin: 1rem auto 2rem ;
-    font-size: 15pt;
+    font-size: 11pt;
     font-weight: bold;
     color: var(--main-content);
     text-transform: capitalize;
 }
 
 .nav-bar{
-    margin: 0 0 0 0.4rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     
@@ -108,11 +108,11 @@ section.hidden {
 
 .nav-bar a.selected {
     color: #ffffffd2;
-    transform: translateX(4px);
+    
 }
 
 .content {
-    padding: 3rem 4.2%;
+    padding: 3rem 4.3%;
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;

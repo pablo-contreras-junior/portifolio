@@ -103,6 +103,10 @@ a.clickable{
         width: 100%;
     }
 
+    .about-me-section .icons-container #age{
+        display: none;
+    }
+
     .about-me-section .icons-container .icon {
         padding: 1rem;
         font-size: 10pt;

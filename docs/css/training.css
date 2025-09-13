@@ -86,19 +86,23 @@
     }
     .training-section .school-card .etec-label {
         width: 100%;
-        flex-direction: row;
+        display: block;
         min-width: none;
-        gap: 0.5rem;
         justify-content: space-between;
     }
 
     .training-section .school-card .etec-label h1{
-        font-size: 20pt;
+        margin-bottom: 1rem;
+        width: 100%;
+        text-align: center;
+        font-size: 26pt;
         color: var(--midnight-green);
     }
 
     .training-section .school-card .etec-label h3{
-        font-size: 14pt;
+        width: 100%;
+        text-align: center;
+        font-size: 15pt;
         color: var(--midnight-green);
     }
 
